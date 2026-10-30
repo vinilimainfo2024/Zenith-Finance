@@ -1,0 +1,19 @@
+{
+  "name": "zenith-finance-prototype",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Protótipo demonstrativo do Zenith Finance e do assistente Steev.",
+  "scripts": {
+    "build:tts": "node build-tts.cjs",
+    "dev": "npm run build:tts && node server.js",
+    "start": "npm run build:tts && node server.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "kokoro-js": "^1.2.1"
+  },
+  "overrides": {
+    "@huggingface/transformers": "^4.3.2",
+    "sharp": "^0.35.5"
+  }
+}

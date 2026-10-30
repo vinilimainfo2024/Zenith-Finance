@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#122641" />
+  <script>try{const theme=localStorage.getItem('zenith-theme');if(theme==='dark'||theme==='light')document.documentElement.dataset.theme=theme}catch{}</script>
+  <title>Zenith Finance — Café Aurora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#inicio" aria-label="Zenith Finance início">
+        <span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M22 3 7 22h10l-3 15 19-23H22l4-11Z" fill="currentColor"/><path d="m23 3 3 4 5-5-8 1ZM7 22l-4 5h11l3-5H7Zm7 15-5-2-3 4 8-2Z" fill="#F39200"/></svg></span>
+        <span class="brand-name">zenith<span>finance</span></span>
+      </a>
+      <div class="workspace-label">ESPAÇO DE TRABALHO</div>
+      <button class="company-switcher"><span class="company-avatar">CA</span><span class="company-name"><b>Café Aurora</b><small>Plano essencial</small></span><span class="chevrons">⌄</span></button>
+      <div class="nav-label">MENU PRINCIPAL</div>
+      <nav class="navigation" aria-label="Navegação principal">
+        <button class="nav-item active" data-page="Visão geral"><span class="nav-icon">◫</span>Visão geral</button>
+        <button class="nav-item" data-page="Financeiro"><span class="nav-icon">◷</span>Financeiro <span class="nav-badge">3</span></button>
+        <button class="nav-item" data-page="Estoque"><span class="nav-icon">▤</span>Estoque</button>
+        <button class="nav-item" data-page="Relatórios"><span class="nav-icon">▥</span>Relatórios</button>
+        <button class="nav-item" data-page="Notas fiscais"><span class="nav-icon">▧</span>Notas fiscais</button>
+      </nav>
+      <div class="nav-label tools-label">ASSISTENTE</div>
+      <button class="nav-item steev-link" data-chat-focus><span class="steev-mini"><span>✳</span></span>Conversar com Steev<span class="online-dot"></span></button>
+      <div class="sidebar-bottom">
+        <div class="help-card"><div class="help-icon">✦</div><b>Precisa de uma mão?</b><p>O Steev pode ajudar você a entender os números do seu negócio.</p><button data-chat-focus>Falar com o Steev <span>→</span></button></div>
+        <button class="nav-item settings-item" data-page="Configurações"><span class="nav-icon">⚙</span>Configurações</button>
+        <div class="profile"><div class="profile-avatar">MA</div><div><b>Marina Alves</b><small>Administradora</small></div><button aria-label="Mais opções">···</button></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="breadcrumbs"><span>Workspace</span><i>/</i><b id="breadcrumb-current">Visão geral</b></div>
+        <div class="top-actions"><span class="demo-chip"><span></span> AMBIENTE DE DEMONSTRAÇÃO</span><button class="icon-button" aria-label="Ajuda">?</button><button class="icon-button notification" aria-label="Notificações">♧<i></i></button><div class="top-avatar">MA</div></div>
+      </header>
+      <div class="page-content" id="overview-content">
+        <section class="welcome-row"><div><div class="eyebrow"><span class="sun-icon">☀</span> TERÇA-FEIRA, 28 DE OUTUBRO DE 2026</div><h1 id="page-title">Bom dia, Marina <span class="wave">✦</span></h1><p>Aqui está o resumo da sua empresa hoje.</p></div><div class="welcome-actions"><button class="button button-outline" id="period-button">◷ <span>Este mês</span><span class="small-chevron">⌄</span></button><button class="button button-primary" id="add-entry"><span>＋</span> Nova movimentação</button></div></section>
+
+        <section class="metrics-grid" aria-label="Resumo financeiro">
+          <article class="metric-card"><div class="metric-heading"><span>Receita total</span><span class="metric-icon mint">↗</span></div><div class="metric-number">R$ 48.290<span>,00</span></div><div class="metric-foot"><span class="trend positive">↗ 12,8%</span><span>vs. mês anterior</span><svg class="sparkline green" viewBox="0 0 80 30"><path d="M1 24 13 19 24 22 34 13 44 17 55 9 66 13 79 3"/></svg></div></article>
+          <article class="metric-card"><div class="metric-heading"><span>Despesas</span><span class="metric-icon peach">↘</span></div><div class="metric-number">R$ 31.740<span>,00</span></div><div class="metric-foot"><span class="trend positive">↘ 4,2%</span><span>vs. mês anterior</span><svg class="sparkline orange" viewBox="0 0 80 30"><path d="M1 8 12 13 23 9 34 18 44 14 55 20 66 16 79 26"/></svg></div></article>
+          <article class="metric-card"><div class="metric-heading"><span>Lucro líquido</span><span class="metric-icon lilac">◈</span></div><div class="metric-number">R$ 16.550<span>,00</span></div><div class="metric-foot"><span class="trend positive">↗ 18,6%</span><span>vs. mês anterior</span><svg class="sparkline green" viewBox="0 0 80 30"><path d="M1 25 13 21 23 24 33 16 45 19 55 8 67 12 79 2"/></svg></div></article>
+          <article class="metric-card"><div class="metric-heading"><span>Produtos em estoque</span><span class="metric-icon blue">▤</span></div><div class="metric-number">1.284 <small>un.</small></div><div class="metric-foot"><span class="stock-attention">● 6 itens</span><span>precisam de reposição</span><svg class="sparkline blue-line" viewBox="0 0 80 30"><path d="M1 13 13 16 23 10 34 17 44 12 55 16 66 7 79 10"/></svg></div></article>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel chart-panel"><div class="panel-header"><div><h2>Visão financeira</h2><p>Acompanhe suas receitas e despesas</p></div><button class="select-button" id="chart-period">Últimos 6 meses <span>⌄</span></button></div><div class="chart-legend"><span><i class="legend-dot revenue"></i>Receitas</span><span><i class="legend-dot expense"></i>Despesas</span></div><div class="chart-wrap"><div class="y-labels"><span>R$ 50 mil</span><span>R$ 40 mil</span><span>R$ 30 mil</span><span>R$ 20 mil</span><span>R$ 10 mil</span><span>R$ 0</span></div><div class="chart-plot"><div class="grid-lines"><i></i><i></i><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 720 225" preserveAspectRatio="none" class="finance-chart" aria-label="Gráfico de receitas e despesas de maio a outubro"><defs><linearGradient id="revFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#F39200" stop-opacity=".16"/><stop offset="1" stop-color="#F39200" stop-opacity="0"/></linearGradient><linearGradient id="expFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#183D6C" stop-opacity=".12"/><stop offset="1" stop-color="#183D6C" stop-opacity="0"/></linearGradient></defs><path class="area revenue-area" d="M0 168 C45 156 65 162 100 132 S165 145 205 117 S270 126 310 92 S372 110 410 82 S480 96 515 66 S585 85 620 47 S680 52 720 22 V225 H0Z"/><path class="line revenue-line" d="M0 168 C45 156 65 162 100 132 S165 145 205 117 S270 126 310 92 S372 110 410 82 S480 96 515 66 S585 85 620 47 S680 52 720 22"/><path class="area expense-area" d="M0 194 C45 185 68 189 100 174 S165 184 205 165 S270 171 310 151 S372 162 410 138 S480 151 515 127 S585 138 620 108 S680 121 720 92 V225 H0Z"/><path class="line expense-line" d="M0 194 C45 185 68 189 100 174 S165 184 205 165 S270 171 310 151 S372 162 410 138 S480 151 515 127 S585 138 620 108 S680 121 720 92"/><circle cx="720" cy="22" r="4" class="chart-point rev-point"/><circle cx="720" cy="92" r="4" class="chart-point exp-point"/></svg><div class="x-labels"><span>Mai</span><span>Jun</span><span>Jul</span><span>Ago</span><span>Set</span><span>Out</span></div></div></div><div class="chart-insight"><span class="insight-spark">✦</span><span><b>Seu faturamento cresceu 12,8%</b> em relação ao mês passado. Continue assim!</span><button data-chat-focus>Entender análise <span>→</span></button></div></article>
+
+          <article class="panel assistant-teaser"><div class="teaser-person"><span class="teaser-orbit"></span><span class="teaser-head"></span><span class="teaser-body"></span><span class="teaser-spark">✳</span></div><div class="teaser-copy"><div class="eyebrow">SEU ASSISTENTE ZENITH</div><h2>Conheça o Steev</h2><p>Converse por texto ou escute as respostas enquanto cuida do seu negócio.</p><button class="button button-primary" data-chat-focus>Abrir o Steev <span>↗</span></button></div></article>
+        </section>
+
+        <section class="bottom-grid"><article class="panel transactions-panel"><div class="panel-header"><div><h2>Movimentações recentes</h2><p>As últimas entradas e saídas da sua empresa</p></div><button class="text-link" data-page="Financeiro">Ver todas <span>→</span></button></div><div class="table-scroll"><table><thead><tr><th>DESCRIÇÃO</th><th>CATEGORIA</th><th>DATA</th><th>VALOR</th><th>STATUS</th></tr></thead><tbody>
+          <tr><td><span class="transaction-icon coffee">☕</span><span class="description"><b>Venda balcão</b><small>PDV · #V-2841</small></span></td><td><span class="category">Vendas</span></td><td>Hoje, 10:42</td><td class="amount-in">+ R$ 284,50</td><td><span class="status paid">● Concluído</span></td></tr>
+          <tr><td><span class="transaction-icon truck">▣</span><span class="description"><b>Fornecedor Café Brasil</b><small>NF-e · #004821</small></span></td><td><span class="category">Estoque</span></td><td>Hoje, 09:18</td><td class="amount-out">− R$ 1.250,00</td><td><span class="status paid">● Pago</span></td></tr>
+          <tr><td><span class="transaction-icon card">▰</span><span class="description"><b>Venda delivery</b><small>iFood · #D-1092</small></span></td><td><span class="category">Vendas</span></td><td>Ontem, 18:36</td><td class="amount-in">+ R$ 96,00</td><td><span class="status paid">● Concluído</span></td></tr>
+          <tr><td><span class="transaction-icon bill">▤</span><span class="description"><b>Conta de energia</b><small>Enel · Venc. 05/11</small></span></td><td><span class="category">Contas</span></td><td>Ontem, 15:20</td><td class="amount-out">− R$ 438,70</td><td><span class="status pending">● Pendente</span></td></tr>
+        </tbody></table></div></article>
+        <article class="panel stock-panel"><div class="panel-header"><div><h2>Estoque baixo</h2><p>Produtos que merecem atenção</p></div><button class="stock-count">6 itens</button></div><div class="stock-list">
+          <div class="stock-row"><div class="product-thumb beans">☕</div><div class="product-info"><b>Grãos especiais</b><small>SKU 00128 · Café</small></div><div class="stock-level"><b>4 <small>un.</small></b><div class="stock-track"><i style="width:20%"></i></div><small>Mínimo: 20</small></div></div>
+          <div class="stock-row"><div class="product-thumb milk">🥛</div><div class="product-info"><b>Leite integral 1L</b><small>SKU 00462 · Bebidas</small></div><div class="stock-level"><b>8 <small>un.</small></b><div class="stock-track"><i style="width:38%"></i></div><small>Mínimo: 24</small></div></div>
+          <div class="stock-row"><div class="product-thumb cup">▤</div><div class="product-info"><b>Copo descartável</b><small>SKU 00803 · Embalagens</small></div><div class="stock-level"><b>12 <small>un.</small></b><div class="stock-track"><i style="width:45%"></i></div><small>Mínimo: 30</small></div></div>
+        </div><button class="stock-footer" data-page="Estoque">Ver todos os itens <span>→</span></button></article></section>
+        <footer class="footer"><span>© 2026 Zenith Finance <i>·</i> Feito para simplificar seu negócio</span><span><span class="footer-status"></span> Seus dados estão atualizados <i>·</i> <a href="#ajuda">Central de ajuda</a></span></footer>
+      </div>
+      <div class="page-content secondary-content" id="secondary-content" hidden></div>
+    </main>
+  </div>
+  <button class="steev-launcher" id="steev-launcher" aria-label="Abrir conversa com Steev"><span class="launcher-spark">✳</span><span>Falar com Steev</span><i></i></button>
+  <section class="steev-tray" id="steev-tray" aria-label="Conversa com Steev" aria-hidden="true" hidden>
+    <div class="tray-persona"><button class="tray-close mobile-close" data-close-tray aria-label="Fechar assistente">×</button><div class="persona-top"><span class="persona-logo">Z</span><span>ZENITH <i>INTELLIGENCE</i></span></div><div class="persona-visual"><div class="persona-halo halo-one"></div><div class="persona-halo halo-two"></div><div class="persona-core"><div class="core-glow"></div><div class="core-face"><span class="face-eye left-eye"></span><span class="face-eye right-eye"></span><span class="face-line"></span></div><div class="core-collar"></div></div><div class="persona-orbit orbit-a"></div><div class="persona-orbit orbit-b"></div><span class="persona-star star-a">✧</span><span class="persona-star star-b">✦</span></div><div class="persona-caption"><span class="online-dot"></span> STEEV ESTÁ OUVINDO<div class="equalizer"><i></i><i></i><i></i><i></i><i></i></div></div><div class="persona-name">Steev<span>Assistente inteligente da Zenith</span></div><p class="persona-quote">“Deixe os números comigo. Você foca no seu negócio.”</p><div class="persona-foot">Café Aurora <span>·</span> Ambiente de demonstração</div></div>
+    <div class="tray-chat"><header class="tray-header"><div class="tray-title"><div class="tray-avatar">✳<i></i></div><div><b>Steev <span>IA</span></b><small id="steev-status"><i></i> Verificando conexão...</small></div></div><div class="tray-controls"><button id="voice-toggle" aria-label="Desativar leitura em voz alta" title="Leitura em voz alta ativada">◖))</button><button data-close-tray aria-label="Minimizar Steev" title="Minimizar">−</button><button data-close-tray aria-label="Fechar Steev" title="Fechar">×</button></div></header><div class="tray-context"><span>✦</span><p>Olá, Marina. Já estou acompanhando o Café Aurora. O que você quer saber?</p></div><div class="tray-suggestions"><span>EXPERIMENTE</span><button data-prompt="Quais produtos precisam de reposição?">Estoque baixo <i>↗</i></button><button data-prompt="Como estão minhas despesas este mês?">Resumo financeiro <i>↗</i></button><button data-prompt="Qual foi meu produto mais vendido?">Mais vendido <i>↗</i></button></div><div class="tray-messages" id="chat-messages" aria-live="polite"></div><form class="tray-composer" id="chat-form"><input id="chat-input" type="text" placeholder="Escreva para o Steev..." aria-label="Mensagem para o Steev" autocomplete="off"/><button class="tray-send" aria-label="Enviar mensagem">↑</button></form><div class="tray-footnote"><span>✧</span> As respostas serão lidas em voz alta. <button id="stop-speaking" hidden>Parar áudio</button><span class="tray-disclaimer" id="privacy-note">Sem chave de IA configurada</span></div></div>
+  </section>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="tts-client.bundle.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
